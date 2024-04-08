@@ -15,7 +15,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <img src="../../img/logo.png" alt="" class="logo">
         <nav class="d-flex justify-content-between align-items-center">
-          <ul class="menu d-flex  align-items-center ">
+          <ul class="header-menu d-flex  align-items-center ">
             <a href=""><li>Home</li></a>
             <a href=""><li>Services</li></a>
             <a href=""><li>About</li></a>
@@ -39,18 +39,13 @@ header{
   background-color: black;
   .container{
     height: 95px;
-    .btn{
-      font-size: 0.9rem;
-    }
+    
     .cart,  .search{
       color: white;
       margin-left: 2.5rem;
       font-size: 0.9rem;
     }
-    .btn{
-      border-radius: 20px;
-      padding: 10px 25px;
-    }
+    
 
   }
   ul{

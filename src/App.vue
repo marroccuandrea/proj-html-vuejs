@@ -25,5 +25,9 @@
 </template>
 
 <style lang="scss">
+
 @use './assets/scss/main.scss';
+body{
+  font-family: 'Public Sans', sans-serif;
+}
 </style>
