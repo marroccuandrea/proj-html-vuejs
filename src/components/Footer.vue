@@ -1,10 +1,6 @@
 <script>
-    import {store} from '../data/store'
-    import Card from './partials/Card.vue'
+   import {store} from '../data/store'
     export default {  
-        components: {
-            Card
-        },
     data(){
       return{
         store
@@ -15,10 +11,9 @@
 </script>
 
 <template>
-    <main>
-      Main
-    </main>
-
+  <footer>
+    Footer
+  </footer>
 </template>
 
 

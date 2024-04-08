@@ -11,13 +11,13 @@
 </script>
 
 <template>
-    <div>
-
-    </div>
+    <header>
+      Header
+    </header>
 
 </template>
 
 
 <style lang="scss" scoped>
-
+@import '../assets/scss/partials/variables.scss';
 </style>

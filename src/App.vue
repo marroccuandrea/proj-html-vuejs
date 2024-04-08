@@ -3,10 +3,12 @@
   import { store } from './data/store.js'
   import Header from './components/Header.vue'
   import Main from './components/Main.vue'
+  import Footer from './components/Footer.vue'
   export default {
     components:{
       Header,
-      Main
+      Main,
+      Footer
     },
     data(){
       return{
@@ -17,9 +19,9 @@
 </script>
 
 <template>
-  <div>
-
-  </div>
+  <Header />
+  <Main />
+  <Footer />
 </template>
 
 <style lang="scss">
