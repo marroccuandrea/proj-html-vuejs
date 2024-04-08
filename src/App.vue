@@ -4,11 +4,13 @@
   import Header from './components/Header.vue'
   import Main from './components/Main.vue'
   import Footer from './components/Footer.vue'
+  import Jumbotron from './components/Jumbotron.vue'
   export default {
     components:{
       Header,
       Main,
-      Footer
+      Footer,
+      Jumbotron
     },
     data(){
       return{
@@ -20,6 +22,7 @@
 
 <template>
   <Header />
+  <Jumbotron />
   <Main />
   <Footer />
 </template>
