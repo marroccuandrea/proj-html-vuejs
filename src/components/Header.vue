@@ -58,7 +58,7 @@ header{
       font-size: 0.9rem;
        .badge-cust{
         margin-left: 0.5rem;
-        background-color: yellow;
+        background-color: $giallo;
         color: black;
         font-size: 0.7rem;
         padding: 6px 5px 5px 5px;

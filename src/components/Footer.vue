@@ -60,7 +60,7 @@ footer{
     list-style: none;
     margin-right: 15px;
         a{
-        color: red;
+        color: $rosso-icone;
         text-decoration: none;
         margin: 0 0.4rem;
         font-size: 0.8rem;
