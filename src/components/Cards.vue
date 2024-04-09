@@ -57,6 +57,7 @@
   box-shadow: 2px 2px 10px black;
   .img-card{
     position: absolute;
+    width: 100%;
   }
   .text-card{
     position: relative;
@@ -64,8 +65,10 @@
     // left: 5%;
     padding: 0 15px;
     border-radius: 2px 2px 30px 2px;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 5%, rgba(0,0,0,0.7) 70%);
+    &:hover{
+      background: rgb(0,0,0);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 5%, rgba(0,0,0,0.7) 70%);
+    }
     
     .wave{
       color: white;

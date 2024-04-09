@@ -30,8 +30,8 @@
           <h1>Take control of your health</h1>
           <span><i class="fa-solid fa-wave-square"></i><i class="fa-solid fa-wave-square"></i><i class="fa-solid fa-wave-square"></i></span>
           <p class="text-jumbo">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
-          <button class="btn btn-primary"><i class="fa-brands fa-youtube me-2"></i>Visit my YouTube channel</button>
-          <button class="btn btn-outline-secondary ms-3">Buy Avada today<i class="fa-solid fa-arrow-right ms-2"></i></button>
+          <button class="btn btn-primary red"><i class="fa-brands fa-youtube me-2"></i>Visit my YouTube channel</button>
+          <button class="btn btn-outline-secondary ms-3 white">Buy Avada today<i class="fa-solid fa-arrow-right ms-2"></i></button>
         </div>
       </div>
     </div>
@@ -46,6 +46,15 @@
     background-image: url('../../img/slider82x-scaled.jpg');
     background-image: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(0,0,0,0.5)55%), url('../../img/slider82x-scaled.jpg');
     background-size: cover;
+    .red:hover{
+      background-color: $btn-rosso;
+      border-color: $btn-rosso;
+    }
+    .white:hover{
+      background-color: white;
+      border-color: white;
+      color: black;
+    }
     .demo-pack{
       position: absolute;
       top: 8%;

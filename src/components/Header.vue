@@ -1,9 +1,12 @@
 <script>
-    import {store} from '../data/store'
+    import {store} from '../data/store';
+    import {headerMenues} from '../data/menues'
     export default {  
+
     data(){
       return{
-        store
+        store,
+        headerMenues
       }
     }
     
@@ -14,18 +17,27 @@
     <header>
       <div class="container d-flex justify-content-between align-items-center">
         <img src="../../img/logo.png" alt="" class="logo">
-        <nav class="d-flex justify-content-between align-items-center">
-          <ul class="header-menu d-flex  align-items-center ">
-            <a href=""><li>Home</li></a>
-            <a href=""><li>Services</li></a>
-            <a href=""><li>About</li></a>
-            <a href=""><li>Videos</li></a>
-            <a href=""><li>Blog</li></a>
-            <a href=""><li>Store<span class="badge-cust">new</span></li></a>
+        <nav class="d-flex align-items-center">
+          <ul 
+          v-for="(item, index) in headerMenues.main" 
+          :key="`m-${index}`" 
+          class="header-menu d-flex justify-content-between align-items-center ">
+            <li >
+              <a :href="item.href">{{ item.text }}</a>
+              <span v-if="index == headerMenues.main.length - 1" class="badge-cust">new</span>
+            </li>
           </ul>
           <button class="btn btn-primary ms-5 ">Schedule a workout</button>
-          <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
-          <a class="search" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          
+            <ul 
+              v-for="(item, index) in headerMenues.social"
+              :key="`s-${index}`"
+              class="header-menu d-flex justify-content-between align-items-center ">
+                <li>
+                  <a :href="item.href" v-html="`${item.text}`"></a>
+                </li>
+            </ul>
+          
         </nav>
       </div>
     </header>
@@ -41,9 +53,12 @@ header{
     height: 95px;
     
     .cart,  .search{
-      color: white;
+      color: $grigio;
       margin-left: 2.5rem;
       font-size: 0.9rem;
+      &:hover{
+        color: white;
+      }
     }
     
 
@@ -51,12 +66,7 @@ header{
   ul{
     list-style: none;
     margin: auto 0;
-    a{
-      text-decoration: none;
-      color: white;
-      margin-left: 2.5rem;
-      font-size: 0.9rem;
-       .badge-cust{
+    .badge-cust{
         margin-left: 0.5rem;
         background-color: $giallo;
         color: black;
@@ -64,7 +74,20 @@ header{
         padding: 6px 5px 5px 5px;
         border-radius: 2px;
       }
+    a{
+      text-decoration: none;
+      color: $grigio;
+      margin-left: 0.5rem;
+      font-size: 0.9rem;
+      &:hover{
+        color: white;
+      }
+       
     }
+  }
+  .btn:hover{
+    background-color: $btn-rosso;
+    border-color: $btn-rosso;
   }
   
 }
