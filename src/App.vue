@@ -5,12 +5,14 @@
   import Main from './components/Main.vue'
   import Footer from './components/Footer.vue'
   import Jumbotron from './components/Jumbotron.vue'
+  
   export default {
     components:{
       Header,
       Main,
       Footer,
-      Jumbotron
+      Jumbotron,
+      
     },
     data(){
       return{
