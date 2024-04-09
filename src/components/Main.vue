@@ -31,7 +31,38 @@
         </div>
       </div>
       <div class="container-fluid white">
-        
+        <div class="row row-cols-2">
+          <div class="col col-video">
+            <div class="vid-container">
+              <img class="vid-img" src="../../img/service15-2x.jpg" alt="">
+            </div>
+          </div>
+          <div class="col col-text">
+            <div class="workout">
+              <h5>Tune up your workouts</h5>
+              <h2>The best health & fitness advice online</h2>
+              <div class="youtube d-flex">
+                <div class="logo-sx">
+                  <img src="../../img/unnamed.jpg" alt="">
+                </div>
+                <div class="link-youtube">
+                  <div class="link-top">
+                    <p class="theme m-0">ThemeFusion</p>
+                    
+                  </div>
+                  <div class="link-btm">
+                    <span class="yt-red"><i class="fa-brands fa-youtube"></i> YouTube</span>
+                    <span class="yt-white">999+</span>
+                  </div>
+                </div>
+              </div>
+              <h6>Arcu en facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="container playlist-vid">
+          
+        </div>
       </div>
     </main>
 
@@ -51,7 +82,7 @@
     margin-bottom: 70px;
   }
   .text{
-    height: 40%;
+    height: 30%;
     width: 60%;
     
     h2{
@@ -85,6 +116,23 @@
 }
 .white{
   height: 1500px;
+  .col-video{
+    height: 820px;
+    margin-top: -50px;
+    .vid-container{
+      width: 100%;
+      height: 100%;
+      .vid-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2px 2px 30px 2px;
+      }
+    }
+  }
+  .workout{
+    margin: 100px 60px;
+  }
 }
 
 </style>

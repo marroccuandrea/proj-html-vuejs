@@ -23,7 +23,7 @@
                     <ul 
                     v-for="(item,index) in footerMenues.social" 
                     :key="`s-${index}`" 
-                    class="footer-menu ">
+                    class="footer-menu">
                         <li>
                             <a :href="item.href" v-html="`${item.text}`"></a>
                         </li>
