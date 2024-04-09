@@ -54,6 +54,7 @@
   margin: 0 20px;
   border-radius: 2px 2px 30px 2px;
   border: none;
+  box-shadow: 2px 2px 10px black;
   .img-card{
     position: absolute;
   }
