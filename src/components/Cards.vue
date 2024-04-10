@@ -55,6 +55,10 @@
   border-radius: 2px 2px 30px 2px;
   border: none;
   box-shadow: 2px 2px 10px black;
+  transition: all 0.4s;
+  &:hover{
+    scale: 1.1;
+  }
   .img-card{
     position: absolute;
     width: 100%;
@@ -65,10 +69,9 @@
     // left: 5%;
     padding: 0 15px;
     border-radius: 2px 2px 30px 2px;
-    &:hover{
-      background: rgb(0,0,0);
-      background: linear-gradient(180deg, rgba(0,0,0,0) 5%, rgba(0,0,0,0.7) 70%);
-    }
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 5%, rgba(0,0,0,0.7) 70%);
+    
     
     .wave{
       color: white;
