@@ -34,7 +34,8 @@
         <div class="row row-cols-2">
           <div class="col col-video">
             <div class="vid-container">
-              <img class="vid-img" src="../../img/service15-2x.jpg" alt="">
+              <img class="vid-img" src="../../img/service15-2x.jpg">
+              <span class="play"><i class="fa-solid fa-play"></i></span>
             </div>
           </div>
           <div class="col col-text">
@@ -61,30 +62,33 @@
           </div>
         </div>
         <div class="container playlist-vid">
-          <div class="featured d-flex justify-content-between  align-items-center">
+          <div class="featured d-flex justify-content-between  align-items-center mb-5">
             <h5 class="featured-sx">Featured playlists</h5>
             <h6 class="featured-dx"><a href="#">View all videos</a> <i class="fa-solid fa-chevron-right"></i></h6>
           </div>
           <div class="videos-wrapper d-flex justify-content-between">
-            <div class="card card-3">
+            <div class="card card-3 ">
               <img src="../../img/video2-2x.jpg" class="card-img-top">
+              <span class="play"><i class="fa-solid fa-play"></i></span>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Thighs & glute workout</h5>
+                <p class="card-text">Increase your mobility</p>
               </div>
             </div>
-            <div class="card card-3">
+            <div class="card card-3 mx-5">
               <img src="../../img/video7-2x.jpg" class="card-img-top">
+              <span class="play"><i class="fa-solid fa-play"></i></span>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Lift, firm & perk up</h5>
+                <p class="card-text">Feel young again</p>
               </div>
             </div>
-            <div class="card card-3">
+            <div class="card card-3 ">
               <img src="../../img/video9-2x.jpg" class="card-img-top">
+              <span class="play"><i class="fa-solid fa-play"></i></span>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Slim & trim your waist</h5>
+                <p class="card-text">Shed those extra pounds</p>
               </div>
             </div>
           </div>
@@ -147,11 +151,25 @@
     .vid-container{
       width: 100%;
       height: 100%;
+      position: relative;
+      .play{
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        i{
+          color: $blu;
+          background-color: white;
+          padding: 24px 26px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
       .vid-img{
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 2px 2px 30px 2px;
+        // position: relative;
       }
     }
   }
@@ -210,13 +228,29 @@
     }
     .card-3{
       width: calc(100% / 3);
-      margin: 2rem 0;
+      // margin: 2rem 2rem;
       border: none;
       img{
         border-radius: 2px 2px 30px 2px;
+        position: relative;
+      }
+      .play{
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        i{
+          color: $blu;
+          background-color: white;
+          padding: 20px 22px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
       }
       .card-body{
         text-align: center;
+        .card-text{
+          color: $blu;
+        }
       }
     }
   }
