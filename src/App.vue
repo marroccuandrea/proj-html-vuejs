@@ -5,6 +5,7 @@
   import Main from './components/Main.vue'
   import Footer from './components/Footer.vue'
   import Jumbotron from './components/Jumbotron.vue'
+  import Subscription from './components/Subscription.vue'
   
   export default {
     components:{
@@ -12,7 +13,7 @@
       Main,
       Footer,
       Jumbotron,
-      
+      Subscription
     },
     data(){
       return{
@@ -26,6 +27,7 @@
   <Header />
   <Jumbotron />
   <Main />
+  <Subscription />
   <Footer />
 </template>
 
