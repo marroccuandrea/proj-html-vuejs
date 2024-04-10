@@ -61,7 +61,33 @@
           </div>
         </div>
         <div class="container playlist-vid">
-          
+          <div class="featured d-flex justify-content-between  align-items-center">
+            <h5 class="featured-sx">Featured playlists</h5>
+            <h6 class="featured-dx"><a href="#">View all videos</a> <i class="fa-solid fa-chevron-right"></i></h6>
+          </div>
+          <div class="videos-wrapper d-flex justify-content-between">
+            <div class="card card-3">
+              <img src="../../img/video2-2x.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card card-3">
+              <img src="../../img/video7-2x.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card card-3">
+              <img src="../../img/video9-2x.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -165,6 +191,33 @@
       padding: 4px 5px;
       border: 1px solid $grigio;
       color: $grigio;
+    }
+  }
+  .playlist-vid{
+    margin-top: 6rem;
+    .featured-sx{
+      font-size: 1.5rem;
+    }
+    .featured-dx{
+      font-size: 1rem;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      i{
+        font-size: 0.9rem;
+      }
+    }
+    .card-3{
+      width: calc(100% / 3);
+      margin: 2rem 0;
+      border: none;
+      img{
+        border-radius: 2px 2px 30px 2px;
+      }
+      .card-body{
+        text-align: center;
+      }
     }
   }
 }
