@@ -39,16 +39,15 @@
           </div>
           <div class="col col-text">
             <div class="workout">
-              <h5>Tune up your workouts</h5>
-              <h2>The best health & fitness advice online</h2>
+              <h5 class="tune mb-5">Tune up your workouts</h5>
+              <h2 class="best mb-4">The best health & fitness advice online</h2>
               <div class="youtube d-flex">
-                <div class="logo-sx">
+                <div class="logo-sx me-2">
                   <img src="../../img/unnamed.jpg" alt="">
                 </div>
-                <div class="link-youtube">
+                <div class="link-youtube mb-4">
                   <div class="link-top">
-                    <p class="theme m-0">ThemeFusion</p>
-                    
+                    <p class="theme mb-1">ThemeFusion</p>
                   </div>
                   <div class="link-btm">
                     <span class="yt-red"><i class="fa-brands fa-youtube"></i> YouTube</span>
@@ -56,7 +55,8 @@
                   </div>
                 </div>
               </div>
-              <h6>Arcu en facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</h6>
+              <h6 class="grey-text mb-4">Arcu en facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</h6>
+              <button class="btn btn-danger btn-red"><i class="fa-brands fa-youtube"></i> Visit my YouTube channel</button>
             </div>
           </div>
         </div>
@@ -109,7 +109,6 @@
         width: 50px;
         height: 50px;
         object-fit: cover;
-        // margin-left: 100px;
       }
     }
   }
@@ -131,7 +130,42 @@
     }
   }
   .workout{
-    margin: 100px 60px;
+    margin: 110px 110px;
+    .grey-text{
+      color: $grigio;
+    }
+    .btn-red{
+      background-color: red;
+      border-color: red;
+      &:hover{
+        background-color: #FF414B;
+        border-color: #FF414B;
+      }
+    }
+    .tune{
+      color: $blu;
+      font-size: 1.6rem;
+    }
+    .best{
+      font-size: 3.5rem;
+    }
+    .theme{
+      font-size: 0.7rem;
+      color: $grigio;
+    }
+    .yt-red{
+      font-size: 0.7rem;
+      background-color: #FB0000;
+      color: white;
+      padding: 4px 5px;
+      border: 1px solid #FB0000;
+    }
+    .yt-white{
+      font-size: 0.7rem;
+      padding: 4px 5px;
+      border: 1px solid $grigio;
+      color: $grigio;
+    }
   }
 }
 
