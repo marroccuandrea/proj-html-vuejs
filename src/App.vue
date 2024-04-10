@@ -8,6 +8,7 @@
   import Subscription from './components/Subscription.vue'
   import Plan from  './components/Plan.vue'
   import Latest from  './components/Latest.vue'
+  import Buy from  './components/Buy.vue'
 
   export default {
     components:{
@@ -17,7 +18,8 @@
       Jumbotron,
       Subscription,
       Plan,
-      Latest
+      Latest,
+      Buy
     },
     data(){
       return{
@@ -34,6 +36,7 @@
   <Subscription />
   <Plan />
   <Latest />
+  <Buy />
   <Footer />
 </template>
 
