@@ -14,13 +14,12 @@
           </div>
           <div class="videos-wrapper d-flex justify-content-between">
             <div class="card card-3 ">
-                <div class="img-card gradient">
-                    <img src="../../img/blog4-2x.jpg" class="card-img-top">
+                <img src="../../img/blog4-2x.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">The best protein shake</h5>
+                    <p class="card-text">By admin | November 26th, 2019 | Gym</p>
                 </div>
-              <div class="card-body">
-                <h5 class="card-title">The best protein shake</h5>
-                <p class="card-text">By admin | November 26th, 2019 | Gym</p>
-              </div>
+                <div class="img-card gradient"></div>
             </div>
             <div class="card card-3 mx-5">
               <img src="../../img/blog1-2x.jpg" class="card-img-top">
@@ -28,6 +27,7 @@
                 <h5 class="card-title">Ultimate cardio workout</h5>
                 <p class="card-text">By admin | November 26th, 2019 | Gym</p>
               </div>
+              <div class="img-card gradient"></div>
             </div>
             <div class="card card-3 ">
               <img src="../../img/blog3-2x.jpg" class="card-img-top">
@@ -35,6 +35,7 @@
                 <h5 class="card-title">New juices available now</h5>
                 <p class="card-text">By admin | November 26th, 2019 | Gym</p>
               </div>
+              <div class="img-card gradient"></div>
             </div>
           </div>
         </div>
@@ -66,12 +67,29 @@
     .card-3{
       width: calc(100% / 3);
       border: none;
+      transition: all 0.6s;
+      
+      &:hover .gradient{
+        transition: all 0.6s;
+        background: linear-gradient(to Top, $blu-trans, $blu-trans, $blu-trans-light, transparent);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        }
+      .card-body{
+        z-index: 999;
+        background-color: white;
+        .card-text{
+            color: $grigio;
+            font-size: 0.8rem;
+        }
+      }
       
       img{
         border-radius: 2px;
-        position: relative;
       }
     }
 }
 }
+
 </style>
