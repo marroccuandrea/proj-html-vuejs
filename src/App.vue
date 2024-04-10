@@ -9,6 +9,7 @@
   import Plan from  './components/Plan.vue'
   import Latest from  './components/Latest.vue'
   import Buy from  './components/Buy.vue'
+  import Cardlink from  './components/Cardlink.vue'
 
   export default {
     components:{
@@ -19,7 +20,8 @@
       Subscription,
       Plan,
       Latest,
-      Buy
+      Buy,
+      Cardlink
     },
     data(){
       return{
@@ -37,6 +39,7 @@
   <Plan />
   <Latest />
   <Buy />
+  <Cardlink />
   <Footer />
 </template>
 
