@@ -95,6 +95,10 @@
         background-color: white;
         padding: 27px 29px;
         border-radius: 50%;
+        cursor: pointer;
+        &:hover{
+          color: $rosso;
+        }
       }
     }
     
