@@ -54,7 +54,12 @@
             text-align: center;
             background-color: black;
             color: white;
-            border: 7px solid $blu;
+            border: 7px solid grey;
+            transition: all 0.4s;
+            &:hover{
+                scale: 1.1;
+                border: 7px solid $blu;
+            }
             .card-body{
                 margin: 60px 25px;
                 .icon{
