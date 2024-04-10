@@ -6,14 +6,16 @@
   import Footer from './components/Footer.vue'
   import Jumbotron from './components/Jumbotron.vue'
   import Subscription from './components/Subscription.vue'
-  
+  import Plan from  './components/Plan.vue'
+
   export default {
     components:{
       Header,
       Main,
       Footer,
       Jumbotron,
-      Subscription
+      Subscription,
+      Plan
     },
     data(){
       return{
@@ -28,6 +30,7 @@
   <Jumbotron />
   <Main />
   <Subscription />
+  <Plan />
   <Footer />
 </template>
 
