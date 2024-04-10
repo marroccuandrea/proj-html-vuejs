@@ -10,6 +10,7 @@
   import Latest from  './components/Latest.vue'
   import Buy from  './components/Buy.vue'
   import Cardlink from  './components/Cardlink.vue'
+  import Event from  './components/Event.vue'
 
   export default {
     components:{
@@ -21,7 +22,8 @@
       Plan,
       Latest,
       Buy,
-      Cardlink
+      Cardlink,
+      Event
     },
     data(){
       return{
@@ -40,6 +42,7 @@
   <Latest />
   <Buy />
   <Cardlink />
+  <Event />
   <Footer />
 </template>
 

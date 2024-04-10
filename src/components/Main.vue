@@ -162,6 +162,9 @@
           padding: 24px 26px;
           border-radius: 50%;
           cursor: pointer;
+          &:hover{
+            color: $rosso;
+          }
         }
       }
       .vid-img{
@@ -244,6 +247,9 @@
           padding: 20px 22px;
           border-radius: 50%;
           cursor: pointer;
+          &:hover{
+            color: $rosso;
+          }
         }
       }
       .card-body{
