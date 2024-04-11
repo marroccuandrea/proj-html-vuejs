@@ -7,6 +7,12 @@ import {store} from '../data/store'
             }
         }
     }
+// Formula percorso immagine
+// getImagePath(imagePath) {
+//     return new URL(`../../img/${imagePath}`, import.meta.url).href;
+// }
+
+
 </script>
 
 <template>

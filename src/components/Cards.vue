@@ -10,6 +10,11 @@
   }
 </script>
 
+// Formula percorso immagine
+// getImagePath(imagePath) {
+//     return new URL(`../../img/${imagePath}`, import.meta.url).href;
+// }
+
 <template>
   <div class="card">
     <div class="img-card">
