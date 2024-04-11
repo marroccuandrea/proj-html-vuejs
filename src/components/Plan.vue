@@ -1,40 +1,27 @@
 <script>
+import {store} from '../data/store'
     export default {
-        
+        data(){
+            return{
+                store
+            }
+        }
     }
 </script>
 
 <template>
     <div class="container-fluid">
-        <div class="container d-flex h-100 justify-content-bewteen">
-            <div class="card">
+        <div class="container d-flex h-100 justify-content-bewteen gap-5">
+            <div 
+            v-for="(plansItem,index) in store.plansItems"
+            :key="index" 
+            class="card">
                 <div class="card-body">
-                    <span class="icon"><i class="fa-solid fa-heart-pulse"></i></span>
-                    <h5 class="card-title mb-3">Team training</h5>
-                    <h6 class="card-subtitle mb-5">Find a partner</h6>
-                    <p class="card-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
-                    <a href="#" class="card-link">Find a partner <i class="fa-solid fa-chevron-right"></i></a>
-                    
-                </div>
-            </div>
-            <div class="card mx-5">
-                <div class="card-body">
-                    <span class="icon"><i class="fa-solid fa-dumbbell"></i></span>
-                    <h5 class="card-title mb-3">Crossfit workout</h5>
-                    <h6 class="card-subtitle mb-5">Push your limits</h6>
-                    <p class="card-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
-                    <a href="#" class="card-link">Learn about Crossfit <i class="fa-solid fa-chevron-right"></i></a>
-                    
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <span class="icon"><i class="fa-solid fa-weight-scale"></i></span>
-                    <h5 class="card-title mb-3">Weight loss plan</h5>
-                    <h6 class="card-subtitle mb-5">Shed those pounds</h6>
-                    <p class="card-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
-                    <a href="#" class="card-link">Schedule a workout <i class="fa-solid fa-chevron-right"></i></a>
-                    
+                    <span class="icon"><i :class="['fa-solid', plansItem.icon ]"></i></span>
+                    <h5 class="card-title mb-3">{{plansItem.title}}</h5>
+                    <h6 class="card-subtitle mb-5">{{ plansItem.subtitle }}</h6>
+                    <p class="card-text">{{ plansItem.text }}</p>
+                    <a :href="plansItem.link" class="card-link">{{ plansItem.linkText }} <i :class="['fa-solid', plansItem.linkIcon ]"></i></a>
                 </div>
             </div>
         </div>
